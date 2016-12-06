@@ -197,7 +197,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                                 }
 
                             } else {
-                                //Toast.makeText(getApplicationContext(), "Internet is not avialable", Toast.LENGTH_SHORT).show();
                                 checkInternet.noInternet(MainActivity.this);
                             }
                         }
