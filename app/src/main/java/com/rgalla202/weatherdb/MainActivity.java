@@ -123,8 +123,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             // On selecting a spinner item
             listItem = parent.getItemAtPosition(position).toString();
             result = db.findURL(listItem);
-            //showing selected spinner item
-            Toast.makeText(parent.getContext(), "You selected: " + listItem, Toast.LENGTH_LONG).show();
             chosenLocation = listItem;
 
         }
