@@ -50,7 +50,8 @@ public class AsyncReadRss extends AsyncTask<Void, Void, Void>
     @Override
     protected void onPreExecute() {
         // update the UI immediately after the task is executed
-        //display progress dialog until postExecute.
+        //display progress dialog to keep user informed until long duration task is complete
+        // close dialog in postExecute.
         prog = new ProgressDialog(context);
         prog.setTitle("Fetching data");
         prog.setMessage("Please Wait ...");
