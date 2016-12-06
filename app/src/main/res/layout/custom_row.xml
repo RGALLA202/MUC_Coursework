@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp"
+    android:id="@+id/cardview"
+    app:cardBackgroundColor="@color/cardview_light_background">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+        <TextView
+            android:textStyle="bold"
+            android:background="#4E9AD6"
+            android:paddingLeft="10dp"
+            android:gravity="left"
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/day_text" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:paddingLeft="10dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                app:srcCompat="@drawable/placeholder"
+                android:id="@+id/thumb_img"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+               <TextView
+                   android:text="weather"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/weather_text"
+                   android:layout_marginLeft="23dp"
+                   />
+
+                <TextView
+                    android:gravity="left"
+                    android:text="max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/max_temp_text"
+                    android:layout_marginLeft="23dp"
+                     />
+
+                <TextView
+                    android:gravity="left"
+                    android:text="min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/min_temp_text"
+                    android:layout_marginLeft="23dp"
+
+                     />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/right_arrow_black"
+                android:id="@+id/moreInfoArrowRight"
+                 />
+        </LinearLayout>
+
+       <TextView
+           android:textStyle="italic"
+           android:text="date"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/date_text"
+           android:layout_marginLeft="@dimen/activity_horizontal_margin"
+           android:layout_marginRight="@dimen/activity_horizontal_margin"
+           />
+
+   </LinearLayout>
+
+</android.support.v7.widget.CardView>
