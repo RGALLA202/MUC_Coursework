@@ -62,6 +62,10 @@ public class AsyncReadRss extends AsyncTask<Void, Void, Void>
         super.onPreExecute();
     }
 
+    /**
+     * dismiss progress dialog and display data in the recyclerView
+     * @param aVoid
+     */
     @Override
     protected void onPostExecute(Void aVoid) {
         super.onPostExecute(aVoid);
